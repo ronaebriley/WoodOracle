@@ -1,0 +1,13 @@
+The last book I read was called The Glass Castle by Jeannette Walls. It was about a young girl and her... 
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.gitignore
+	book.txt
+	src/.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
