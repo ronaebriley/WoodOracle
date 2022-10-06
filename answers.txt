@@ -26,6 +26,6 @@ j. git log -Gtransaction
 k. git log --author=
 ”<pattern>”
 l. git log --author=
-”<Lauren>” --until='2015-05-01' or git rev-list --since=<2015-06-14>
+”<Lauren>” --until='2015-05-01' or git rev-list --since=<2015-06-14> 
 
 
