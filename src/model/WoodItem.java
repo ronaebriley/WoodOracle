@@ -9,6 +9,17 @@ public class WoodItem {
     private String type;
     private Double baseDeliveryTime;
     private Double price;
+    int randomNumber = (int) (Math.random() * 10000000);
+    String invoiceID = toString(randomNumber);
+
+    /**
+     * Returns the Invoice ID
+     * @return invoiceID
+     */
+    public String getInvoiceID() {
+        //invoicesID = invoiceID.toString();
+        return invoiceID;
+    }
 
     /**
      * Default constructor
@@ -17,6 +28,8 @@ public class WoodItem {
         this.type = "Empty";
         this.baseDeliveryTime = 0.0;
         this.price = 0.0;
+        this.randomNumber = 0000000;
+        this.invoiceID = "0000000";
     }
 
     /**
@@ -25,10 +38,11 @@ public class WoodItem {
      * @param daseDeliveryTime base delivery time
      * @param price price per Bare Foot
      */
-    public WoodItem(String type, Double daseDeliveryTime, Double price) {
+    public WoodItem(String type, Double daseDeliveryTime, Double price, String invoiceID) {
         this.type = type;
         this.baseDeliveryTime = daseDeliveryTime;
         this.price = price;
+        this.invoiceID = invoiceID;
     }
 
     /**
@@ -59,9 +73,11 @@ public class WoodItem {
         return price;
     }
 
-    @Override
-    public String toString() {
-        return "";
+    //@Override
+    public String toString(int play) {
+        //String str = String.valueOf(play);
+        String str = Integer.toString(play);
+        return str;
     }
 
 }
