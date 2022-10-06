@@ -16,5 +16,16 @@ nothing added to commit but untracked files present (use "git add" to track)
 a. git log
 b. git checkout 
 c. git log --since='2020-06-01' --until='2010-04-02' or git rev-list --since=<date1>
-e. ??
-d.  
+d. git diff --cached 
+e. git add 
+f. git log shows the history of the repository while git status shows the current repository 
+g. git shortly gives a summary of the log 
+h. git log -- <main.java>
+i. git log ---p <main.java> 
+j. git log -Gtransaction
+k. git log --author=
+”<pattern>”
+l. git log --author=
+”<Lauren>” --until='2015-05-01' or git rev-list --since=<2015-06-14>
+
+
