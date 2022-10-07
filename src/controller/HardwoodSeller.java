@@ -35,7 +35,7 @@ public class HardwoodSeller extends model.WoodItem {
         System.out.println("PDF created");
         PDPageContentStream contentStream = new PDPageContentStream(document, page);
         contentStream.beginText();
-        contentStream.showText("Hello World");
+        contentStream.showText("woodInvoice_" + wood.getInvoiceID() + ".txt");
         wood.getType();
         wood.getDaseDeliveryTime();
         wood.getPrice();
