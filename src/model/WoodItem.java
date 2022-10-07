@@ -1,8 +1,9 @@
 package model;
 //package SamplePackage;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
+import java.io.IOException;
+import org.apache.pdfbox.pdmodel.PDDocument;
 
 /**
  * @author Esteban
@@ -15,6 +16,8 @@ public class WoodItem {
     private Double price;
     int randomNumber = (int) (Math.random() * 10000000);
     String invoiceID = toString(randomNumber);
+    //Random rnd = new Random();
+    //        int invoice_id = 0 + rnd.nextInt(10000000);
 
     /**
      * Returns the Invoice ID

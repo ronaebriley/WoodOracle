@@ -4,6 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.File;
 import java.util.*;
 import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.PDPageContentStream;
+import org.apache.pdfbox.text.PDFTextStripper;
+import java.io.IOException;
+//import org.apache.pdfbox.pdmodel;
 
 //pdfbox
 
@@ -13,10 +18,33 @@ import org.apache.pdfbox.pdmodel.PDDocument;
  */
 
 public class HardwoodSeller extends model.WoodItem {
-    model.WoodItem wood = new model.WoodItem();
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws IOException {
         // TODO Auto-generated method stub
-        // wood.
+        model.WoodItem wood = new model.WoodItem();
+        //Creating PDF document object
+        //PDDocument document = new PDDocument();
+
+        //Saving the document
+        //document.save("C:/PdfBox_Examples/my_doc.pdf");
+
+        //https://pdfbox.apache.org/1.8/cookbook/documentcreation.html
+        PDDocument document = new PDDocument();
+        PDPage page = new PDPage();
+        document.addPage( page );
+        System.out.println("PDF created");
+        PDPageContentStream contentStream = new PDPageContentStream(document, page);
+        contentStream.beginText();
+        contentStream.showText("Hello World");
+        wood.getType();
+        wood.getDaseDeliveryTime();
+        wood.getPrice();
+        contentStream.endText();
+        contentStream.close();
+
+
+        //Closing the document
+        //document.close();
 
     }
 
